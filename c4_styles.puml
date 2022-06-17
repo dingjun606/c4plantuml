@@ -1,0 +1,22 @@
+@startuml
+
+'Icons
+!define FA_5_URL https://gitee.com/coder4/plantuml-icon-font-sprites/raw/master/mirror/font-awesome-5
+!include FA_5_URL/server.puml
+!include FA_5_URL/mobile_alt.puml
+
+!define MATERIAL_URL https://gitee.com/coder4/plantuml-icon-font-sprites/raw/master/mirror/material
+!include MATERIAL_URL/zoom_in.puml
+
+'Common Styling
+skinparam wrapWidth 250
+
+UpdateElementStyle("System", $bgColor="#ffffff", $fontColor="#000000", $shadowing="true")
+UpdateElementStyle("Person", $bgColor="#e0f1fb", $fontColor="#000000", $shape=RoundedBoxShape())
+
+AddElementTag("clickableText", $fontColor="purple")
+AddElementTag("button", $bgColor="#444444", $fontColor="#ffffff")
+AddElementTag("primary", $bgColor="#ffdb58", $fontColor="#000000", $shadowing="false", $borderColor="Gray")
+AddElementTag("highlightBoundary", $bgColor="#fce8ee")
+
+@enduml
